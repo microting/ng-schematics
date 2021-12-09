@@ -1,6 +1,6 @@
 {
-  "name": "@schuchard/ng-schematics",
-  "version": "0.1.0",
+  "name": "@microting/ng-schematics",
+  "version": "0.2.0",
   "description": "Schematic collection",
   "private": true,
   "scripts": {
