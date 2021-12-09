@@ -17,3 +17,15 @@ updates:
     directory: "/sandbox/test-workspace"
     schedule:
       interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/packages/big-app"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/packages/schematics-core"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/packages/tailwindcss-schematic"
+    schedule:
+      interval: "daily"
