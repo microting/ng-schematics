@@ -51,5 +51,8 @@
     "trailingComma": "es5",
     "bracketSpacing": true,
     "arrowParens": "always"
+  },
+  "dependencies": {
+    "strip-ansi": "^5.2.0"
   }
 }
