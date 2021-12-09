@@ -1,5 +1,5 @@
 import { SchematicTestRunner, UnitTestTree } from '@angular-devkit/schematics/testing';
-import { JsonObject } from '@angular-devkit/core';
+// import { JsonObject } from '@angular-devkit/core';
 
 export async function getWorkspaceTree(opt?: {
   appName?: string;
@@ -47,23 +47,22 @@ export async function getApplicationTree(opt?: {
     .toPromise();
 }
 
-export async function runSchematic(opt?: {
-  schematicOptions: JsonObject;
-  name: string;
-  command?: string;
-  tree?: UnitTestTree;
-  collectionPath?: string;
-}): Promise<UnitTestTree> {
-  const schematicRunner = new SchematicTestRunner(
-    name,
-    require.resolve(opt?.collectionPath || '../collection.json')
-  );
-
-  return await schematicRunner
-    .runSchematicAsync(
-      opt?.command || 'ng-add',
-      opt?.schematicOptions,
-      opt?.tree || (await getWorkspaceTree())
-    )
-    .toPromise();
-}
+// export async function runSchematic(opt?: {
+//   schematicOptions: JsonObject;
+//   name: string;
+//   command?: string;
+//   tree?: UnitTestTree;
+//   collectionPath?: string;
+// }): Promise<UnitTestTree> {
+//   const schematicRunner = new SchematicTestRunner(name,
+//     require.resolve(opt?.collectionPath || '../collection.json')
+//   );
+//
+//   return await schematicRunner
+//     .runSchematicAsync(
+//       opt?.command || 'ng-add',
+//       opt?.schematicOptions,
+//       opt?.tree || (await getWorkspaceTree())
+//     )
+//     .toPromise();
+// }
