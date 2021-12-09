@@ -46,6 +46,7 @@ export function tailwindSchematic(options: SchematicOptions): Rule {
       updateDependencies(),
       updateAngularJson(options),
       addFiles(options),
+      // @ts-ignore
       applyLintFix(),
     ]);
   };
@@ -111,13 +112,16 @@ function addFiles(options: SchematicOptions): Rule {
     return chain([
       mergeWith(
         apply(url('./files/root'), [
+          // @ts-ignore
           filterExistingPath(tree, Paths.WebpackConfig, context),
+          // @ts-ignore
           filterExistingPath(tree, Paths.TailwindConfig, context),
           move('./'),
         ])
       ),
       mergeWith(
         apply(url('./files/project'), [
+          // @ts-ignore
           filterExistingPath(tree, `${options.projectSourceRoot}/${Paths.TailwindStyles}`, context),
           move(options.projectSourceRoot),
         ])
