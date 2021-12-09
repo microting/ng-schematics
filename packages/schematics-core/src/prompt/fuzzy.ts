@@ -1,6 +1,6 @@
 import * as inquirer from 'inquirer';
 import * as fuzzy from 'fuzzy';
-import stripAnsi from 'strip-ansi';
+import stripAnsi = require('strip-ansi');
 
 export type InquirerSearchSource = (previousAnswers: any, input: string) => Promise<any>;
 export interface IFuzzySearch {
@@ -29,7 +29,7 @@ export function fuzzySearch({ choices }: { choices: IFuzzySearch[] }) {
       .filter(input, choices, {
         extract: (el) => el.displayString, // displayed during autocomplete selection
       })
-      .map(function({ original, string }: fuzzy.FilterResult<IFuzzySearch>) {
+      .map(function ({ original, string }: fuzzy.FilterResult<IFuzzySearch>) {
         return {
           value: original, // entire object
           name: stripAnsi(string),

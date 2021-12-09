@@ -53,6 +53,6 @@
     "arrowParens": "always"
   },
   "dependencies": {
-    "strip-ansi": "5.2.0"
+    "strip-ansi": "6.0.1"
   }
 }
