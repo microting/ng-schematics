@@ -19,7 +19,7 @@ import {
   parsePath,
   applyLintFix,
   ProjectOptions,
-} from '@schuchard/schematics-core';
+} from '@microting/schematics-core';
 import { concat, Observable } from 'rxjs';
 
 export const enum Paths {

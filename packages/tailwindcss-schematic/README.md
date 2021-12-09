@@ -11,6 +11,7 @@ A schematic that makes it easy to use Tailwind CSS with Angular projects. Tailwi
 🤔[Why Tailwind](https://tailwindcss.com/#what-is-tailwind)
 
 ## Demo App
+
 <a href="https://ng-tailwind.netlify.com" align="center"><img src="https://user-images.githubusercontent.com/10186449/71378551-256bed00-25c0-11ea-94d9-327fab8c50d8.png">
 </a>
 
@@ -32,4 +33,4 @@ ng g tailwindcss-schematic:demo
 - prompt for a path to an `*.html` file.
 - press enter to select the `app.component.html` for your default project.
 
-An example [repo](https://github.com/schuchard/ng-tailwindcss-demo) can be viewed live [here](https://ng-tailwind.netlify.com).
+An example [repo](https://github.com/microting/ng-tailwindcss-demo) can be viewed live [here](https://ng-tailwind.netlify.com).

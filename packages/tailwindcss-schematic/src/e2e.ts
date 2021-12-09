@@ -1,5 +1,5 @@
 import { chain, externalSchematic, Rule, SchematicContext, Tree } from '@angular-devkit/schematics';
-import { determineProject } from '@schuchard/schematics-core';
+import { determineProject } from '@microting/schematics-core';
 
 export default function index(): Rule {
   return async (tree: Tree, _context: SchematicContext) => {

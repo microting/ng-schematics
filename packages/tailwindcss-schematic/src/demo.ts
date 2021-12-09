@@ -1,5 +1,5 @@
 import { chain, Rule, SchematicContext, Tree } from '@angular-devkit/schematics';
-import { determineProject } from '@schuchard/schematics-core';
+import { determineProject } from '@microting/schematics-core';
 
 interface SchematicOptions {
   path?: string;
