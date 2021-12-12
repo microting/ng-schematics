@@ -26,7 +26,7 @@
   "license": "MIT",
   "schematics": "./collection.json",
   "dependencies": {
-    "@angular-devkit/core": "13.0.4",
+    "@angular-devkit/core": "13.1.1",
     "@angular-devkit/schematics": "11.2.15",
     "@microting/schematics-core": "^0.5.0",
     "rxjs": "7.4.0"
