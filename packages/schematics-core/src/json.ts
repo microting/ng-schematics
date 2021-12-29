@@ -122,6 +122,7 @@ export function addPackageJsonDep(
   context?: SchematicContext
 ): Observable<Tree> {
   return of(...deps).pipe(
+    // @ts-ignore
     concatMap((pkg) => (pkg.version ? of(pkg) : getLatestNodeVersion(pkg.name))),
     map((packageFromRegistry: NodePackage) => {
       const { name, version } = packageFromRegistry;
