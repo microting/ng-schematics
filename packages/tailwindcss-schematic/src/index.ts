@@ -17,7 +17,7 @@ import {
   NodeDependencyType,
   parseJsonAtPath,
   parsePath,
-  applyLintFix,
+  // applyLintFix,
   ProjectOptions,
 } from '@microting/schematics-core';
 import { concat, Observable } from 'rxjs';
@@ -47,7 +47,7 @@ export function tailwindSchematic(options: SchematicOptions): Rule {
       updateAngularJson(options),
       addFiles(options),
       // @ts-ignore
-      applyLintFix(),
+      // applyLintFix(),
     ]);
   };
 }
@@ -58,7 +58,9 @@ function updateDependencies(): Rule {
     context.logger.debug('Updating dependencies...');
     context.addTask(new NodePackageInstallTask());
 
+    // @ts-ignore
     return concat(
+      // @ts-ignore
       addPackageJsonDep(tree, NodeDependencyType.Default, [{ name: 'tailwindcss' }]),
       addPackageJsonDep(tree, NodeDependencyType.Dev, [
         { name: '@angular-builders/custom-webpack' },

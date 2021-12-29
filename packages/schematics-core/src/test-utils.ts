@@ -12,7 +12,7 @@ export async function getWorkspaceTree(opt?: {
     name: 'workspace',
     newProjectRoot: 'projects',
     version: '8.0.0',
-    defaultProject: opt?.appName || 'bar',
+    // defaultProject: opt?.appName || 'bar',
     ...opt?.workspaceOptions,
   };
 

@@ -1,6 +1,6 @@
 import * as inquirer from 'inquirer';
 import * as fuzzy from 'fuzzy';
-import stripAnsi = require('strip-ansi');
+import stripAnsi from 'strip-ansi';
 
 export type InquirerSearchSource = (previousAnswers: any, input: string) => Promise<any>;
 export interface IFuzzySearch {
