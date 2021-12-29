@@ -5,6 +5,8 @@ rm -rf dist
 
 echo "compiling typescript"
 tsc -p tsconfig.json
+tsc --version
+which tsc
 
 # echo "copying collection.json to dist"
 # cp collection.json dist
