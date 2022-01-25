@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "@angular-devkit/core": "13.1.4",
-    "@angular-devkit/schematics": "13.1.2",
+    "@angular-devkit/schematics": "13.1.4",
     "@phenomnomnominal/tsquery": "4.2.0",
     "@schematics/angular": "13.1.4",
     "fuzzy": "0.1.3",
