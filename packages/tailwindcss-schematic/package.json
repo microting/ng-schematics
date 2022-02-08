@@ -29,7 +29,7 @@
     "@angular-devkit/core": "13.1.4",
     "@angular-devkit/schematics": "13.1.4",
     "@microting/schematics-core": "^0.5.1",
-    "rxjs": "7.5.2"
+    "rxjs": "7.5.3"
   },
   "devDependencies": {
     "@schematics/angular": "^13.1.2"
