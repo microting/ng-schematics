@@ -22,7 +22,7 @@
     "inquirer-autocomplete-prompt": "1.4.0",
     "inquirer-fuzzy-path": "2.3.0",
     "lodash": "4.17.21",
-    "rxjs": "7.5.2",
+    "rxjs": "7.5.4",
     "strip-json-comments": "4.0.0",
     "typescript": "4.5.5"
   },
