@@ -27,7 +27,7 @@
   "schematics": "./collection.json",
   "dependencies": {
     "@angular-devkit/core": "13.1.4",
-    "@angular-devkit/schematics": "13.1.4",
+    "@angular-devkit/schematics": "13.2.3",
     "@microting/schematics-core": "^0.5.1",
     "rxjs": "7.5.2"
   },
