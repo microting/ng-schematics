@@ -24,7 +24,7 @@
   "license": "MIT",
   "schematics": "./collection.json",
   "dependencies": {
-    "@angular-devkit/core": "13.1.4",
+    "@angular-devkit/core": "13.2.4",
     "@angular-devkit/schematics": "13.1.4",
     "@schematics/angular": "13.1.4",
     "@microting/schematics-core": "^0.5.1",
